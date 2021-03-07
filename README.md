@@ -1,2 +1,2 @@
 # rsschool-cv
-https://testforfe.io/rsschool-cv/cv.md
+https://testforfe.io/rsschool-cv/cv
