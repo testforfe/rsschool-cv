@@ -61,16 +61,7 @@
     </p>
 
 
-    <p> 
-        <h3>Thx for reading=)…</h3>
-    </p>
-
-    <style>
-        * {
-            margin-left: 2;
-            padding-left: 0;
-        }
-    </style>
+    
 
 </body>
 </html>
