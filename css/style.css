@@ -1,0 +1,83 @@
+body {
+	background: #F5DEB3;
+	font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+	padding-top: 50px;
+	margin: 0 auto;
+	height: 1900px;
+	max-width: 1500px;
+	background: #DEB887	;
+	border-radius: 10%;
+	-webkit-box-shadow: 0px 0px 32px 16px #DEB887; 
+	box-shadow: 0px 0px 32px 16px #DEB887;
+}
+
+.header-main {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	margin-left: 50px;
+}
+
+.header-logo {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+	margin-right: 150px;
+}
+
+h1, 
+h2,
+img {
+	margin-top: 40px;
+}
+
+p,
+li {
+	margin-top: 20px;
+	letter-spacing: 0.5px;
+	font-size: 24px;
+}
+
+.vk-logo {
+	height: 50px;
+	width: 50px;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 3% 10%;
+}
+
+.logo-rss {
+	height: 40px;
+	width: 90px;
+}
+
+@media (max-width: 680px){
+	.wrapper {
+		height: 1600px;
+	}
+	.header-main {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	p,
+	li {
+		margin-top: 10px;
+		letter-spacing: normal;
+		font-size: 16px;
+}
+}
+
