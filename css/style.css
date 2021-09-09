@@ -18,6 +18,10 @@ body {
     box-shadow: 0px 0px 32px 16px #DEB887;
 }
 
+.for-valid {
+    font-size: 0px;
+}
+
 h1 {
     font-size: 64px;
 }
