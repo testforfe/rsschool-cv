@@ -6,10 +6,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Yury Suchovarov - CV</title>
+
+
+
+
+	<!-- highlight.js -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
+	
+	
+	
+	<!-- fonts Roboto -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
 		rel="stylesheet">
+		<!-- style and reset -->
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/reset.css">
 </head>
@@ -19,29 +32,83 @@
 
 		<div class="header-main">
 			<header class="header">
-				<img class="header-logo" src="./img/ava.jpg" alt="qwer">
+				<img class="header-logo" src="./img/ava.jpg" alt="CV-logo">
+				<section class="menu">
+					<nav>
+						<ul>
+							<li><a class="menu-item" href="#id-1">MY CONTACTS</a></li>
+							<li><a class="menu-item" href="#id-2">ABOUT ME</a></li>
+							<li><a class="menu-item" href="#id-3">SKILLS</a></li>
+							<li><a class="menu-item" href="#id-4">CODE EXAMPLE</a></li>
+							<li><a class="menu-item" href="#id-5">MY PROJECTS</a></li>
+							<li><a class="menu-item" href="#id-6">EDUCATION</a></li>
+							<li><a class="menu-item" href="#id-7">COURSES</a></li>
+							<li><a class="menu-item" href="#id-8">ENGLISH</a></li>
+							<li><a class="menu-item" href="#id-9">SELF-PRESENTATION</a></li>
+						</ul>
+					</nav>
+				</section>
 			</header>
 
 
 			<main class="main">
 				<h1>Yury Suchovarov</h1>
-				<h2>MY CONTACTS</h2>
-				<a href="https://vk.com/silvermatch">
-					<img class="vk-logo" src="./img/vk.png" alt="vk">
-				</a>
-				<h2>ABOUT ME</h2>
-				<p class="about">I’ll want to become a programmer,
+				<article id="id-1">MY CONTACTS</article>
+				<ul class="contacts">
+					<li class="contacts-vk">
+						<a href="https://vk.com/silvermatch">
+							<img class="vk-logo" src="./img/vk.png" alt="vk">
+						</a>
+					</li>
+					<li class="contacts-viber">
+						<a href="https://vk.com/silvermatch">
+							<img class="viber-logo" src="./img/viber-logo.ico" alt="viber">
+						</a>
+						<h4 class="my-phone">+375297483068</h4>
+					</li>
+				</ul>
+				
+				<article id="id-2">ABOUT ME</article>
+				<h2 class="about">I’ll want to become a programmer,
 					I like process of coding, I can forget about a dinner,
 					when I am coding, because I can very involved in the work,
 					I like get pleasure of this stuff this motivates me to go further.
-				</p>
-				<h2>SKILLS</h2>
+				</h2>
+				<article id="id-3">SKILLS</article>
 				<p class="code-skill">
-					Java core – 80%, JavaScript core – 50%, HTML, CSS, GitHub.
+					<ul>
+						<li>Java core – 80%</li>
+						<li>JavaScript core – 50%</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>GitHub</li>
+					</ul>
 				</p>
-				<h2>CODE EXAMPLE</h2>
-				<img src="./img/my-code.png" alt="my code" width="360" height="190">
-				<h2>COURSES</h2>
+				<article id="id-4">CODE EXAMPLE</article>
+				<pre>
+					<code class="css">
+function pigIt(str){
+	let array = str.split(' ');
+	for (let i = 0; i < array.length; i++) {
+		if (array[i].toLowerCase() != array[i].toUpperCase()) {
+			let arrSwitch = array[i].split('');
+			arrSwitch.push(arrSwitch[0] + 'ay');
+			arrSwitch.shift();
+			array[i] = arrSwitch.join('');
+		}
+	}
+	str = array.join(' ');
+	return str;
+}
+					</code>
+				</pre>
+				<article id="id-5">MY PROJECTS</article>
+				<a href="https://github.com/testforfe/" target="_blank">
+					<img src="./img/logo-git.png" alt="github" height="40" width="40">
+				</a>
+				<article id="id-6">EDUCATION</article>
+				<h4>Elementary school №40, incomplete higher education RCMaE, courses.</h4>
+				<article id="id-7">COURSES</article>
 				<p>Melarossa - certificate.</p>
 				<ul>
 					<li>JAVA core</li>
@@ -51,23 +118,30 @@
 					<li>CSS</li>
 					<li>GitHub</li>
 				</ul>
-				<h2>ENGLISH</h2>
+				<article id="id-8">ENGLISH</article>
 				<p class="english">
 					I learnt English in school and recently,
 					I became to learn it with a tutor. I estimate my English level near A2,
 					but on EPAM-test I wrote on 80% for Java courses, it is
 					A2+, but I disagree with this assessment…
 				</p>
+				<div class="self-presentation">
+					<article id="id-9">SELF-PRESENTATION</article>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/yH7qW8p_rRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 			</main>
 		</div>
 
 
 		<footer class="footer">
-			<a href="https://github.com/testforfe/">
+			<a href="https://github.com/testforfe/" target="_blank">
 				<img src="./img/logo-git.png" alt="github" height="40" width="40">
 			</a>
-			<h2>2021</h2>
-			<a href="https://rs.school/js/">
+			<a href="https://www.youtube.com" target="_blank">
+				<img class="logo-youtube" src="./img/youtube.png" alt="youtube">
+			</a>
+			<h3>© 2021</h3>
+			<a href="https://rs.school/js/" target="_blank">
 				<img class="logo-rss" src="./img/logo-rss.png" alt="rss">
 			</a>
 		</footer>

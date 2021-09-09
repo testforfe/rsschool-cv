@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: #F5DEB3;
 	font-family: 'Roboto', sans-serif;
@@ -6,7 +10,7 @@ body {
 .wrapper {
 	padding-top: 50px;
 	margin: 0 auto;
-	height: 1900px;
+	height: 3000px;
 	max-width: 1500px;
 	background: #DEB887	;
 	border-radius: 10%;
@@ -14,11 +18,49 @@ body {
 	box-shadow: 0px 0px 32px 16px #DEB887;
 }
 
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 32px;
+}
+h4 {
+	font-size: 30px;
+}
+
 .header-main {
 	position: relative;
 	display: flex;
 	flex-direction: row;
 	margin-left: 50px;
+}
+
+.header {
+	position: relative;
+}
+
+.menu {
+	/* position: -webkit-sticky; */
+	position: sticky;
+	top: 50px;
+	margin-top: 30px;
+	height: 450px;
+	width: 180px;
+	background: #F5DEB3;
+	-webkit-box-shadow: 0px 0px 32px 16px #F5DEB3; 
+	box-shadow: 0px 0px 32px 16px #F5DEB3;
+	
+}
+
+.menu-item {
+	font-size: 24px;
+	color:  #000 !important;
+	text-decoration: none;
 }
 
 .header-logo {
@@ -30,13 +72,16 @@ body {
 .main {
 	display: flex;
 	flex-direction: column;
-	margin-left: 20px;
-	margin-right: 150px;
+	
+}
+
+article {
+	margin-top: 60px;
+	font-size: 64px;
 }
 
 h1, 
-h2,
-img {
+h2 {
 	margin-top: 40px;
 }
 
@@ -45,18 +90,59 @@ li {
 	margin-top: 20px;
 	letter-spacing: 0.5px;
 	font-size: 24px;
+	list-style-type: none;
 }
-
+.contacts-vk,
+.contacts-viber {
+	position: relative;
+	display: flex;
+	height: 50px;
+	width: 50px;
+	transition: 0.5s;
+}
+.viber-logo,
 .vk-logo {
 	height: 50px;
 	width: 50px;
+}
+
+.my-phone {
+	position: absolute;
+	left: 60px;
+	display: none;
+}
+
+.contacts-viber:hover,
+.contacts-vk:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.contacts-viber:hover .my-phone {
+	display: block;
+}
+
+pre {
+	width: 580px;
+}
+
+code {
+	font-size: 14px;
+}
+.self-presentation {
+	margin-top: 40px;
 }
 
 .footer {
 	display: flex;
 	justify-content: space-between;
 	max-width: 1000px;
-	margin: 3% 10%;
+	margin: 3% auto;
+}
+
+.logo-youtube {
+	height: 40px;
+	width: 55px;
 }
 
 .logo-rss {
@@ -64,9 +150,25 @@ li {
 	width: 90px;
 }
 
-@media (max-width: 680px){
+@media (max-width: 1000px) {
+	.menu {
+		position: fixed;
+		right: -15%;
+		top: 10px;
+		transition: 0.4s;
+	}
+	.menu:hover {
+		right: 10px;
+		transition: 0.4s;
+	}
+	pre {
+		width: 500px;
+	}
+	code {
+		font-size: 5px;
+	}
 	.wrapper {
-		height: 1600px;
+		height: 3000px;
 	}
 	.header-main {
 		flex-direction: column;
@@ -77,7 +179,45 @@ li {
 	li {
 		margin-top: 10px;
 		letter-spacing: normal;
-		font-size: 16px;
-}
+		font-size: 24px;
+	}
 }
 
+@media (max-width: 680px) {
+	iframe {
+		width: 392px;
+		height: 220px;
+	}
+	.menu {
+		right: -25%;
+	}
+}
+
+@media (max-width: 600px) {
+	.wrapper {
+		height: 2800px;
+	}
+	pre {
+		width: 200px;
+	}
+	p,
+	li {
+		font-size: 16px;
+	}
+	.header-main {
+		margin-left: 0;
+	}
+	article {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 420px) {
+	iframe {
+		width: 200px;
+		height: 110px;
+	}
+	.menu {
+		right: -40%;
+	}
+}
