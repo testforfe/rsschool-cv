@@ -168,6 +168,7 @@ code {
 iframe {
     width: 560px;
     height: 315px;
+    border: 0px;
 }
 
 @media (max-width: 1000px) {
